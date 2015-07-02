@@ -6,7 +6,10 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "tangle:toggle"
+    "atom-text-editor:not([mini])": [
+      "tangle:connect",
+      "tangle:load-file"
+    ]
   },
   "repository": "https://github.com/fuJiin/tangle",
   "license": "MIT",
