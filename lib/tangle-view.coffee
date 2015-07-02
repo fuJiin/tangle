@@ -1,22 +1,13 @@
+{View} = require "atom-space-pen-views"
+
 module.exports =
-class TangleView
-  constructor: (serializedState) ->
-    # Create root element
-    @element = document.createElement('div')
-    @element.classList.add('tangle')
 
-    # Create message element
-    message = document.createElement('div')
-    message.textContent = "The Tangle package is Alive! It's ALIVE!"
-    message.classList.add('message')
-    @element.appendChild(message)
+class TangleView extends View
 
-  # Returns an object that can be retrieved when package is activated
-  serialize: ->
+  @content: ->
+    @div id: "tangle-output", =>
+      @span outlet: "messages", class: "message"
 
-  # Tear down any state and detach
-  destroy: ->
-    @element.remove()
-
-  getElement: ->
-    @element
+  showMessage: (msg) ->
+    @message.empty()
+    @message.append(msg)
