@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fuJiin/tangle.svg)](https://travis-ci.org/fuJiin/tangle)
+
 # tangle package
 
 A short description of your package.
