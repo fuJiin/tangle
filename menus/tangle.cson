@@ -1,9 +1,13 @@
 # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
 'context-menu':
-  'atom-text-editor': [
+  'atom-text-editor:not([mini])': [
     {
-      'label': 'Toggle tangle'
-      'command': 'tangle:toggle'
+      'label': 'Connect'
+      'command': 'tangle:connect'
+    },
+    {
+      'label': 'Load File'
+      'command': 'tangle:load-file'
     }
   ]
 'menu': [
@@ -13,8 +17,12 @@
       'label': 'tangle'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'tangle:toggle'
+          'label': 'Connect'
+          'command': 'tangle:connect'
+        },
+        {
+          'label': 'Load File'
+          'command': 'tangle:load-file'
         }
       ]
     ]
