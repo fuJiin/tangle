@@ -8,11 +8,17 @@
   "activationCommands": {
     "atom-workspace": "tangle:toggle"
   },
-  "repository": "https://github.com/atom/tangle",
+  "repository": "https://github.com/fuJiin/tangle",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "2.0.5",
+    "nrepl-client": "0.2.3"
+  },
+  "devDependencies": {
+    "temp": "*",
+    "pathwatcher": "*"
   }
 }
